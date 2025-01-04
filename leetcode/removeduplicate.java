@@ -6,19 +6,11 @@ public class removeduplicate {
         removeduplicate(nums);
     }
     static int removeduplicate(int nums[]){
-        int i,j,temp,k=0;
+        int i,temp,k=1;
         for(i=1;i<nums.length;i++){
-            for(j=i;j<nums.length;j++){
-                if(nums[j-1]<nums[j]){
-                    temp=nums[j-1];
-                    nums[j-1]= nums[j];
-                    nums[j]=temp;
-                }
-            }
-            for(int m=1;m<nums.length;m++){
-                if(nums[m]!=nums[m-1]){
-                    k++;
-                }
+            if(nums[i]!=nums[k-1]){
+                nums[k]=nums[i];
+                k++;
             }
         }
         return k;
