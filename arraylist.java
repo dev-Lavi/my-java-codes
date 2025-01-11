@@ -12,5 +12,6 @@ public class arraylist {
         list.add(1);
         list.add(2);
         System.out.println(list);
+        list.toArray(new Integer[0]);
     }
 }

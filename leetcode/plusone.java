@@ -2,24 +2,28 @@ package leetcode;
 
 public class plusone {
     public static void main(String[] args) {
-        int[] digits = {1,2,3};
+        int[] digits = {9,9,9};
         plusone(digits);
     }
     static int[] plusone(int[] digits){
-        int num = 0;
-        int r;
-        int[] result = new int[digits.length];
-        for(int i=0;i<digits.length;i++){
-            num = num*10 + digits[i];
+        int n = digits.length;
+        digits[n-1]=digits[n-1]+1;
+        int j=n-2;
+        while(j>=0 && digits[j+1]==10){
+            digits[j+1]=0;
+            digits[j]=digits[j]+1;
+            j--;
         }
-        num = num + 1;
-
-        for(int j=digits.length-1;j>=0;j--){
-            r = num%10;
-            result[j] = r;
-            num = num/10;
+        if(digits[j+1]==10){
+            int[] result = new int[n+1];
+            result[0]=1;
+            result[1]=0;
+            for(int k=2;k<n;k++){
+                result[k]=digits[k];
+                return result;
+            }
+            return result;
         }
-
-        return result;
+        return digits;
     }
 }
