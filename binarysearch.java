@@ -5,6 +5,9 @@ public class binarysearch {
     }
 
     static int[] binaryseacrh(int[] arr){
+        int left;
+        int right;
+        int mid;
         return arr;
     }
 }
