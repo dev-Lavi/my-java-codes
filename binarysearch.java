@@ -5,9 +5,13 @@ public class binarysearch {
     }
 
     static int[] binaryseacrh(int[] arr){
-        int left;
-        int right;
+        int left=arr[0];
+        int n = arr.length;
+        int right=arr[n];
         int mid;
+        while(left>=right){
+            mid = (left + right)/2;
+        }
         return arr;
     }
 }
