@@ -2,7 +2,7 @@ package leetcode;
 
 public class consecutiveones {
     public static void main(String[] args) {
-        int[] arr = {1, 1, 0, 1, 1, 1, 0, 1};
+        int[] arr = {1, 1, 0, 1, 1, 1};
         int result = consecutiveones(arr);
         System.out.println(result);
     }
@@ -12,17 +12,13 @@ public class consecutiveones {
         int p = 0;
         int count = 0;
         for(int i=0; i<n; i++){
-            if(nums[i]==1){
+            if(nums[i] == 0) count = 0;
+            else{
                 count++;
-            }else{
-                if(count>p){
+                if(p < count){
                     p = count;
-                    count = 0;
                 }
             }
-        }
-        if(count>p){
-            return count;
         }
         return p;
     }
