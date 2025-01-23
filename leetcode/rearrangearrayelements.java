@@ -2,7 +2,7 @@ package leetcode;
 
 public class rearrangearrayelements {
     public static void main(String[] args) {
-        int[] arr = {3, 1, -2, -5, 2, -4};
+        int[] arr = {-1,1};
         rearrangearrayelements(arr);
     }
 
