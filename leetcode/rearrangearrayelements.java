@@ -33,6 +33,8 @@ public class rearrangearrayelements {
                 q++;
             }
         }
+        System.out.println("lavi");
         return result;
+
     }
 }
