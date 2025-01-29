@@ -33,7 +33,7 @@ public class rearrangearrayelements {
                 q++;
             }
         }
-        System.out.println("lavi sharma don't forget the");
+        System.out.println("lavi sharma don't forget the dream");
         return result;
 
     }
