@@ -8,32 +8,20 @@ public class kthsmallest {
     }
     static int kthsmallest(int[][] matrix,int k){
         int n = matrix.length;
-        int[] array = new int[n*n];
-        int i = 0;
-        int j = 0;
-        int x = 0;
-        while( x < n*n && j<n && i<n){
-            if(j==n-1 && i<n-1){
-                if(matrix[i][j]>matrix[i+1][0]){
-                    System.out.println(matrix[i][j]);
-                    array[x]=matrix[i+1][0];
-                    array[x+1]=matrix[i][j];
-                    x=x+2;
-                    i++;
-                    j=1;
-                }else{
-                    array[x]=matrix[i][j];
-                    j=0;
-                    i++;
-                    x++;
-                }
+        int low = matrix[0][0];
+        int high = matrix[n-1][n-1];
+        while(low<=high){
+            int mid = low + (high - low)/2;
+            int count = 0;
+            for(int i=0; i<n; i++){
+                 count = count + upper_bound(matrix[i].begin(),matrix[i].end(),mid) - matrix[i].begin();
+            }
+            if(count<k){
+                low = mid + 1;
             }else{
-                array[x]=matrix[i][j];
-                j++;
-                x++;
+                high = mid;
             }
         }
-        int z = array[k-1];
-        return z;
+        return low;
     }
 }
