@@ -6,6 +6,7 @@ public class kthsmallest {
         int k = 8;
         int answer = kthsmallest(matrix,k);
         System.out.println(answer);
+        System.out.println("don't forget");
     }
     static int kthsmallest(int[][] matrix,int k){
         int n = matrix.length;
