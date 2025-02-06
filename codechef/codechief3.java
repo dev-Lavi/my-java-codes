@@ -2,6 +2,7 @@ package codechef;
 
 public class codechief3 {
     public static void main(String[] args) {
+        System.out.println("don't forget the ");
         int t = 2;
         int ones = 2;
         int twos = 1;
