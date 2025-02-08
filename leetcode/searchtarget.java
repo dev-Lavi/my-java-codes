@@ -9,6 +9,7 @@ public class searchtarget {
 
     static boolean searchtarget(int[][] matrix, int  target){
         int n = matrix.length;
+        System.out.println("don't forget the dream");
         int m = matrix[0].length;
         int start = 0;
         int end = m*n-1;
