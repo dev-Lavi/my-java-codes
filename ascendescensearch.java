@@ -4,6 +4,7 @@ public class ascendescensearch {
         int target = 4;
         int result = ascendescensearch(arr, target);
         System.out.println(result);
+        System.out.println("don't forget the ");
     }
 
     static int ascendescensearch(int[] arr, int target) {
