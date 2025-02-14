@@ -4,6 +4,8 @@ public class missingnumber {
     public static void main(String[] args) {
         int[] arr = {0,2};
         missingnumber(arr);
+        System.out.println("do not");
+
     }
     static int missingnumber(int[] nums){
         int n = nums.length;
