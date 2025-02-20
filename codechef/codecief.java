@@ -10,7 +10,7 @@ public class codecief {
             int n = scanner.nextInt();
             String a = scanner.next();
             System.out.println(findLargerName(n, a));
-            System.out.println("do not");
+            System.out.println("do not forget");
         }
         scanner.close();
     }
