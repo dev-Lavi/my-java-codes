@@ -5,7 +5,7 @@ public class leetcode704 {
         int[] nums = {-1,0,3,5,9,12};
         int target = 9;
         search(nums,target);
-        System.out.println('do not');
+        System.out.println("do not ");
     }
     static int search(int[] nums , int target){
         int n = nums.length;
