@@ -9,6 +9,7 @@ public class sorted2darray {
                       {59, 62, 64, 65},
                       {70, 78, 81, 85}};
         System.out.println(Arrays.toString(search2d(arr,45)));
+        System.out.println("do not");
     }
     static int[] binarysearch(int[][] arr, int row, int cstart, int cend, int target) {
         while (cstart <= cend) {
