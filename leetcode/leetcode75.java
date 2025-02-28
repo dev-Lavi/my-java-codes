@@ -5,6 +5,7 @@ public class leetcode75 {
 
         int[] nums = {2,0,2,1,1,0};
 
+        System.out.println("do not forgot the dream");
         int r = countcolor(nums,0);
         int w = countcolor(nums,1);
         int b = countcolor(nums,2);
