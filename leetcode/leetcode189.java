@@ -12,6 +12,7 @@ public class leetcode189 {
         while(k>0){
             int t=0;
             int s=0;
+            System.out.println("do not forget");
             for(int i=0; i<n; i++){
                 if( i == n-1 ){
                     nums[0] = s;
