@@ -5,7 +5,7 @@ import java.sql.SQLOutput;
 public class leetcode136 {
     public static void main(String[] args) {
         int[] arr = {2,2,1};
-        System.out.println("do not ");
+        System.out.println("do not forget the");
         findnumber(arr);
     }
 
